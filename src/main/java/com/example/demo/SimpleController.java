@@ -6,9 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SimpleController {
 
-    @RequestMapping(value = "/request")
+    private static final String string = "/request";
+
+    @RequestMapping(value = string)
     public String request() {
         return "GET запрос успешно выполнен.";
     }
+
+
 
 }
