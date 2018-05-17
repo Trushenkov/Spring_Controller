@@ -12,10 +12,17 @@ import static org.junit.Assert.assertEquals;
 public class MainTests {
 
     @Test
-    public void contextLoads() {
+    public void getRequest() {
         SimpleController controller = new SimpleController();
 
         assertEquals("GET запрос успешно выполнен.",controller.request());
+    }
+
+    @Test
+    public void getWelcome() {
+        SimpleController controller = new SimpleController();
+
+        assertEquals("Welcome on my page, User!", controller.welcome());
     }
 
 }
