@@ -14,7 +14,6 @@ public class MainTests {
     @Test
     public void contextLoads() {
         SimpleController controller = new SimpleController();
-        controller.request();
 
         assertEquals("GET запрос успешно выполнен.",controller.request());
     }
